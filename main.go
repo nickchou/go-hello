@@ -10,7 +10,7 @@ func main() {
 	http.ListenAndServe(":8080", nil)
 }
 
-//Index  默认首页
+//Index  默认首页方法
 func Index(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "helloworld！")
 }
