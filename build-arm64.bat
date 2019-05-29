@@ -3,6 +3,6 @@
 
 set GOOS=linux
 set GOARCH=amd64
-go build main.go
-
+#go build -o go-hello main.go
+go build
 pause
