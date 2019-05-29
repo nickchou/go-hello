@@ -1,15 +1,10 @@
-FROM  golang:1.12
+FROM scratch
 
 MAINTAINER nickchou "nickchou"
 
-WORKDIR $GOPATH/src/github.com/nickchou/go-hello
+ADD go-hello /go-hello
 
-ADD . $GOPATH/src/github.com/nickchou/go-hello
+EXPOSE 8081
 
-RUN go build main.go
-
-EXPOSE 8080
-
-ENTRYPOINT ["./main"]
-
+CMD ["./go-hello"]
 
