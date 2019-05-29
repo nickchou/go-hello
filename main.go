@@ -7,7 +7,7 @@ import (
 
 func main() {
 	//加一个测试，1
-	fmt.Println("helloworld")
+	//fmt.Println("helloworld")
 	http.HandleFunc("/", Index)
 	http.ListenAndServe(":8081", nil)
 }
