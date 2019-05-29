@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
+	fmt.Println("helloworld")
 	http.HandleFunc("/", Index)
 	http.ListenAndServe(":8080", nil)
 }
